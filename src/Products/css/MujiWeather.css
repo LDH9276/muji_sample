@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@media screen and (min-width:1025px) {
+  .muji_weather{
+    width: 1170px;
+    margin: 100px auto;
+    text-align: center;
+    position: relative;
+  }
+  .muji_weather-slide{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+  }
+  .swiper-wrapper{
+    margin-bottom: 50px
+  }
+  .muji_weather-slide-item{
+    display: block;
+    width: 270px;
+    height: 100%;
+  }
+  .muji_weather-slide-item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .muji_weather-slide-item .slide-info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:1024px) {
+  .muji_weather{
+    width: 100%;
+    margin: 80px auto;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0px 16px;
+  }
+  .muji_weather-slide{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .swiper-wrapper{
+    margin-bottom: 50px
+  }
+  .muji_weather-slide-item{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .muji_weather-slide-img_wrap{
+    width: 100%;
+    position: relative;
+  }
+  .muji_weather-slide-img_wrap::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    margin-bottom: 15px;
+  }
+  .muji_weather-slide-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .muji_weather-slide-item .slide-info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+}

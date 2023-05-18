@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.GNB ul{
+  display: flex;
+}
+.GNB li{
+  margin-right: 20px;
+  display: block;
+  line-height: 80px;
+  text-align: center;
+}
+.GNB li img{
+  vertical-align: middle;
+}
+.searchbox-btn{
+  width: 32px;
+  height: 32px;
+}
+.cartlist{
+  position: relative;
+}
+.cart-badge{
+  position: absolute;
+  top: 16px;
+  right: -8px;
+  display: inline-block;
+  width: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: var(--main-color02);
+  background: var(--main-color01);
+  border-radius: 50%;
+}
+
+@media screen and (min-width:1025px) {
+  .GNB_mobile{
+    display: none;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:1024px) {
+  .GNB_mobile{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: var(--main-color02);
+    position: fixed;
+    left:0;
+    border-bottom: 1px solid var(--main-color04);
+  }
+  @media screen and (max-width:767px) {
+    .GNB_mobile{    
+      top:60px;
+    }
+  }
+  @media screen and (min-width:768px) {
+    .GNB_mobile{
+      top:80px;
+    }
+  }
+  .GNB_mobile li{
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+  }
+}

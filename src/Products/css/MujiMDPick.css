@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media screen and (min-width:1025px) {
+  .muji_mdpick{
+    width: 1170px;
+    margin: 100px auto;
+    text-align: center;
+    position: relative;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:1024px) {
+  .muji_mdpick{
+    width: 100%;
+    margin: 40px auto 0px;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0px 16px;
+  }
+
+}

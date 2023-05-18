@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+@media screen and (min-width:1025px) {
+  .list-detail-wrap{
+    display: grid;
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+  .list-info-wrap{
+    display: grid;
+    position: relative;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  /* 상세정보글 */
+  .list-item-cate, .list-item-subcate{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+  }
+  .list-item-cate_a{
+    width: 5px; 
+    height: auto;
+    margin: 0px 10px;
+    color: var(--main-color01);
+    cursor: pointer;
+  }
+  .list-item-title{
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .list-item-detail{
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  .list-item-price{
+    color: var(--main-color01);
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  /* 장바구니 */
+  .list-buy-wrap{
+    display: flex;
+    position: absolute; right: 0;
+    bottom: 0;
+    width: 50%;
+    padding: 0px 20px;
+    background: var(--main-color01);
+    color: var(--main-color02);
+    line-height: 80px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .list-quantity{
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    margin: 0px 10px;
+    background: var(--main-color02);
+    color: var(--font-color00);
+    line-height: 40px;
+    text-align: center;
+  }
+  .list-quantity button{
+    position: absolute;
+    width: 30px;
+    line-height: 40px;
+  }
+  .list-quantity_minus{
+    left: 0;
+  }
+  .list-quantity_plus{
+    right: 0;
+  }
+  .list-addtocart{
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    margin: 15px 0px;
+    border: 1px solid var(--main-color02);
+    color: var(--main-color02);
+    font-weight: 600;
+    line-height: 50px;
+  } 
+  .list-nowprice{
+    font-weight: 800;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  .list-tomain{
+    display: inline-block;
+    width: 80px;
+    height: 32px;
+    margin: 30px 0px;
+    border: 1px solid var(--main-color01);
+    color: var(--main-color01);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 32px;
+  }
+  
+  
+  
+  .list-detail-info{
+    width: 100%;
+    padding: 80px 0px;
+    box-sizing: border-box;
+  }
+  .info-img-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .info-img-wrap::after{
+    display: block;
+    content: "";
+    padding-bottom: 100%;
+  }
+  .info-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .detail{
+    display: grid;
+    width: 100%;
+    padding: 50px 0px;
+    grid-template-columns: repeat(6, 1fr);
+    gap:30px;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:1024px) {
+  .list-detail-wrap{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .list-info-wrap{
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* 상세정보글 */
+  .list-item-cate, .list-item-subcate{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+  }
+  .list-item-cate_a{
+    width: 5px; 
+    height: auto;
+    margin: 0px 10px;
+    color: var(--main-color01);
+    cursor: pointer;
+  }
+  .list-item-title{
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .list-item-detail{
+    padding: 0px 16px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  .list-item-price{
+    color: var(--main-color01);
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  
+  /* 장바구니 */
+  .list-buy-wrap{
+    display: flex;
+    position: fixed; right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0px 16px;
+    background: var(--main-color01);
+    color: var(--main-color02);
+    line-height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    z-index: 4500;
+  }
+  .list-quantity{
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    margin: 0px 10px;
+    background: var(--main-color02);
+    color: var(--font-color00);
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .list-quantity button{
+    position: absolute;
+    width: 30px;
+    background: none;
+    line-height: 30px;
+    text-align: center;
+  }
+  .list-quantity_minus{
+    left: 0;
+  }
+  .list-quantity_plus{
+    right: 0;
+  }
+  .list-addtocart{
+    display: inline-block;
+    width: 110px;
+    height: 50px;
+    margin: 15px 0px;
+    border: 1px solid var(--main-color02);
+    color: var(--main-color02);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 50px;
+  } 
+  .list-nowprice-wrap{
+    width: 100px;
+    padding: 15px 0px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+  }
+  .list-nowprice{
+    display: block;
+    font-weight: 800;
+  }
+  .list-tomain{
+    display: inline-block;
+    width: 80px;
+    height: 32px;
+    border: 1px solid var(--main-color01);
+    color: var(--main-color01);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 32px;
+  }
+  .list-detail-info{
+    width: 100%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+  }
+  .info-img-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .info-img-wrap::after{
+    display: block;
+    content: "";
+    padding-bottom: 100%;
+  }
+  .info-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .detail{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap:16px;
+  }  
+}

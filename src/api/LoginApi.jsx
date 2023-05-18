@@ -4,7 +4,7 @@ import axios from 'axios';
 export const sendLoginRequest = async (id, password) => {
 
   // 로그인 체크 PHP 파일의 경로 (빌드 전 수정할 것.)
-  const loginCheckPHP = 'http://localhost/test/login_chk.php';
+  const loginCheckPHP = 'http://leedh9276.dothome.co.kr/test/login_chk.php';
 
   // FormData로 POST 전송을 보낸다. ID, PW
   const formData = new FormData();
@@ -23,11 +23,11 @@ export const sendLoginRequest = async (id, password) => {
       console.error(`Error message: ${data.error}`);
       throw new Error(data.error);
     } else if (error.request) { // 서버로부터 응답이 없는 경우
-      console.error('No response received from server');
-      throw new Error('An error occurred while logging in.');
+      console.error('서버로부터 응답이 없습니다. 서버가 실행 중인지 확인해주세요.');
+      throw new Error('로그인 중 에러가 발생했습니다.');
     } else { // 서버로부터 응답이 없는 경우
-      console.error('Error in sending request:', error.message);
-      throw new Error('An error occurred while logging in.');
+      console.error('에러발생:', error.message);
+      throw new Error('로그인 중 에러가 발생했습니다.');
     }
   }
 };

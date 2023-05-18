@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) {
+  .searchbox{
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background: var(--main-color02);
+    top:0px; left: 0px;
+    transition: .5s;
+    z-index: 9980;
+  }
+  .searchbox.active{
+    top:80px; left: 0px;
+  }  
+}
+@media screen and (min-width:320px) and (max-width:767px) {
+  .searchbox{
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background: var(--main-color02);
+    top: -15px; left: 0px;
+    transition: .5s;
+    z-index: 9980;
+  }
+  .searchbox.active{
+    top:60px; left: 0px;
+  }  
+}
+
+@media screen and (min-width: 1025px) {
+  .HeaderWrap{
+    display: flex;
+    width: 1170px;
+    height: 80px;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+  }
+  .ToggleSwitch{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin: 16px 0;
+    background: var(--main-color01);
+    cursor: pointer;
+    user-select: none;
+  }
+  .ToggleSwitch span{
+    display: inline-block;
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    margin: 0 auto;
+    background: var(--main-color02);
+    transition: all 0.3s;
+    left : 8px;
+  }
+  .ToggleSwitch span:first-child{
+    top: 18px;
+  }
+  .ToggleSwitch span:last-child{
+    bottom: 18px;
+  }
+  .ToggleSwitch.Active span:first-child{
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .ToggleSwitch.Active span:last-child{
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
+  .HeaderBtn-wrap{
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .HeaderWrap{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 16px;
+  }
+  .HeaderBtn-wrap > .GNB li:nth-last-of-type(n+3){
+    display: none;
+  }
+  .ToggleSwitch{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin: 16px 0;
+    background: var(--main-color01);
+    cursor: pointer;
+    user-select: none;
+  }
+  .ToggleSwitch span{
+    display: inline-block;
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    margin: 0 auto;
+    background: var(--main-color02);
+    transition: all 0.3s;
+    left : 8px;
+  }
+  .ToggleSwitch span:first-child{
+    top: 18px;
+  }
+  .ToggleSwitch span:last-child{
+    bottom: 18px;
+  }
+  .ToggleSwitch.Active span:first-child{
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .ToggleSwitch.Active span:last-child{
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
+  .HeaderBtn-wrap{
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+  .HeaderWrap{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 16px;
+  }
+  .HeaderWrap h1{
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+  }
+  .HeaderWrap h1 img{
+    width: 120px;
+    vertical-align: middle;
+  }
+  .HeaderBtn-wrap > .GNB li:nth-last-of-type(n+3){
+    display: none;
+  }
+  .ToggleSwitch{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin: 16px 0;
+    background: var(--main-color01);
+    cursor: pointer;
+    user-select: none;
+  }
+  .ToggleSwitch span{
+    display: inline-block;
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    margin: 0 auto;
+    background: var(--main-color02);
+    transition: all 0.3s;
+    left : 8px;
+  }
+  .ToggleSwitch span:first-child{
+    top: 18px;
+  }
+  .ToggleSwitch span:last-child{
+    bottom: 18px;
+  }
+  .ToggleSwitch.Active span:first-child{
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .ToggleSwitch.Active span:last-child{
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
+  .HeaderBtn-wrap{
+    display: flex;
+    align-items: center;
+  }
+}

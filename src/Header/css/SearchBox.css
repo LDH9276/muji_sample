@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.searchbox-wrap{
+  width: 1170px;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: right;
+  transform: translateX(-110px);
+  align-items: center;
+}
+#searchitem{
+  width: 360px;
+  height: 36px;
+  border: 1px solid #272727;
+  padding: 0 10px;
+  margin-right: 10px;
+}

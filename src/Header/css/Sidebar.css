@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+
+
+@media screen and (min-width:1025px) {
+  .nav-sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    background: var(--main-color01);
+    position: fixed;
+    top:50%;
+    z-index: 4000;
+    opacity: 0;
+    transition: .5s;
+  }
+  .nav-sidebar.active{
+    opacity: 1;
+  }
+  .sidebar-cartlist{
+    display: flex;
+    width: 100%;
+    line-height: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .sidebar-cartlist a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .sidebar-totop, .sidebar-tobottom{
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .sidebar-cart_icon{
+    width: 30px;
+    height: 100%;
+    object-fit: contain;
+  }
+  .sidebar-cart_badge{
+    background: var(--main-color02);
+    color: var(--main-color01);
+    display: block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    position: absolute;
+    top: 17px;
+    right: 7px;
+    border-radius: 50%;
+  }
+  .sidebar-bottom{
+    transform: rotate(180deg);
+  }
+  .nav-sidebar{
+    right: 50%;
+    transform: translate(646px,-50%);  
+  }
+}
+@media screen and (min-width:320px) and (max-width:1024px) {
+  .nav-sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 55px;
+    background: var(--main-color01);
+    position: fixed;
+    bottom: 120px;
+    right: 16px;
+    z-index: 4000;
+    opacity: 0;
+    transition: .5s;
+  }
+  .nav-sidebar.active{
+    opacity: 1;
+  }
+  .sidebar-cartlist{
+    width: 100%;
+    line-height: 70px;
+    height: 70px;
+    text-align: center;
+  }
+  .sidebar-cartlist a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebar-totop, .sidebar-tobottom{
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+  }
+  .sidebar-cart_icon{
+    width: 32px;
+    height: auto;
+    object-fit: contain;
+  }
+  .sidebar-cart_badge{
+    background: var(--main-color02);
+    color: var(--main-color01);
+    display: block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    border-radius: 50%;
+  }
+  .sidebar-bottom{
+    transform: rotate(180deg);
+  }
+}
