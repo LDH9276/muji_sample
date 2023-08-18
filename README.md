@@ -9,3 +9,6 @@ http://leedh9276.dothome.co.kr/muji
 3. 장바구니 State로 개수 저장(로컬스토리지 기능)
 4. 회원기능을 통해 비회원은 구매불가, 회원은 구매가능하게 DB를 연동할 수 있는 axios 기능 추가
 5. 구매버튼 후 구매 DB를 통해 회원간 구매내역을 조회 가능
+
+백엔드 구현은 다음 리포지토리를 참소해주세요.
+https://github.com/LDH9276/muji_sample_server
